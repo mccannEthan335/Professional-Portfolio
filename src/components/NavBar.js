@@ -39,7 +39,7 @@ export default class NavBar extends Component {
               }} >
                 <a href='#abtMe'><button>About Me</button></a>
                 <a href='#pgSmry'><button>Page Summary</button></a>
-                <a href='#prj'><button>Projects</button></a>
+                <a href='#prj1'><button>Projects</button></a>
                 <a href='#cI'><button>Contact Info</button></a>
               </div>
             </div> 
