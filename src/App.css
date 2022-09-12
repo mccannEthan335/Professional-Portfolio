@@ -1,0 +1,99 @@
+body {
+  background-color: #030303;
+}
+
+
+a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0;
+}
+
+
+.navHead {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.NavBar p {
+  font-size: 10px;
+}
+
+.NavBar {
+  position: fixed;
+  width: 100%;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.btn1, .btn2, .btn3 {
+  min-height: 40px;
+  width: 80px;
+  font-size: 12px;
+  
+}
+
+.drpDwn :hover{
+  color: rgb(49, 150, 238);
+  
+}
+
+.navList, .projectsList, .profilesList {
+  display: none;
+  position: absolute;
+  text-align: center ;
+  right: 1rem;
+  top: 3rem;
+
+}
+
+.intro {
+  font-size: 60px;
+  color: #616060;
+  border-bottom: solid 10px;
+  background-image: url('./images/Screen\ Shot\ 2022-09-06\ at\ 4.58.13\ AM.png');
+}
+
+.AboutMe {
+  margin-bottom: 5rem;
+  border-top: solid 5px #fff;
+  border-bottom: solid 5px #fff;
+}
+
+.Projects {
+  color: #fff;
+}
+
+.summary {
+  background-color: #a0a0a0;
+  padding: 2rem;
+}
+
+.secTitle{
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.Comment{
+  color: white;
+  padding: 1rem;
+}
+
+#message {
+  height: 200px
+}
+
+#form-textarea-control-opinion {
+  height: 200px;
+}
+
+#form-textarea-control-opinion {
+  width: 350px;
+}
