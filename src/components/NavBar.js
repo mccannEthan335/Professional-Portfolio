@@ -18,8 +18,8 @@ export default class NavBar extends Component {
             <br></br>
             <p className="col-sm-4 mt-3">Quick Links</p>
           </div>
-          <div className="btnGroup col-sm-6">
-          <div className="projectsBtn">
+          <div className="btnGroup col-sm-6 row">
+          <div className="projectsBtn col-sm-4">
               <div className='btn'>
                 <button className='btn1 bg-dark text-light'
                   onMouseOver={function() {
@@ -43,7 +43,7 @@ export default class NavBar extends Component {
                 <a href='#cI'><button>Contact Info</button></a>
               </div>
             </div> 
-            <div className="projectsBtn">
+            <div className="projectsBtn col-sm-4">
               <div className='btn'>
                 <button className='btn2 bg-dark text-light'
                   onMouseOver={function() {
@@ -69,7 +69,7 @@ export default class NavBar extends Component {
                 <a href='#prj7'><button>Lost Paws</button></a>
               </div>
             </div>    
-            <div className="profilesBtn">
+            <div className="profilesBtn col-sm-4">
               <div className='btn'>
                 <button className='btn3 bg-dark text-light'
                   onMouseOver={function() {

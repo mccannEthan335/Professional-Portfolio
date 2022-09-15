@@ -1,7 +1,9 @@
 body {
   background-color: #030303;
+  width: 100%;
+  text-align: center;
 }
-
+ul { list-style: none;}
 
 a {
   display: flex;
@@ -9,7 +11,11 @@ a {
   text-decoration: none;
   padding: 0;
 }
+.Comment {border:solid #fff 10px;}
 
+img {
+  width: 600px;
+}
 
 .navHead {
   font-size: 18px;
@@ -17,26 +23,58 @@ a {
   align-items: center;
 }
 
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.btn1, .btn2, .btn3 {
+  display: inline;
+  flex-direction: row;
+  min-height: 40px;
+  font-size: 12px;
+  
+}
+
+@media screen and (max-width: 800px) {
+  
+  
+  .container {
+    flex-direction: row;
+  }
+  .Projects {
+    min-width: 70%;
+  }
+  .NavBar {
+    flex-direction: row;
+  }
+
+img { max-width: 500px;}
+
+input, textarea{width: 600px;}
 .NavBar p {
   font-size: 10px;
 }
 
 .NavBar {
-  position: fixed;
+  position: relative;
   width: 100%;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.btnGroup {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  
+.row {
+  flex-direction: column;
 }
+
+
 
 .btn1, .btn2, .btn3 {
+  display: inline-flex;
+  flex-direction: column;
   min-height: 40px;
-  width: 80px;
   font-size: 12px;
+  min-width: 500px;
   
 }
 
@@ -45,30 +83,59 @@ a {
   
 }
 
-.navList, .projectsList, .profilesList {
-  display: none;
-  position: absolute;
-  text-align: center ;
-  right: 1rem;
-  top: 3rem;
 
-}
 
-.intro {
-  font-size: 60px;
-  color: #616060;
-  border-bottom: solid 10px;
-  background-image: url('./images/Screen\ Shot\ 2022-09-06\ at\ 4.58.13\ AM.png');
-}
 
-.AboutMe {
-  margin-bottom: 5rem;
-  border-top: solid 5px #fff;
-  border-bottom: solid 5px #fff;
-}
 
 .Projects {
   color: #fff;
+}
+
+
+.Comment{
+  color: white;
+  padding: 1rem;
+}
+
+#message {
+  height: 200px
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.content {
+  padding: 1rem;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 400px;
+  }
+  .btn1, .btn2, .btn3 {
+    min-width: 200px;
+
+  }
+  input, textarea {width: 400px;}
+}
+
+@media screen and (min-width: 801px) {
+
+
+  .content {
+  flex-flow: row nowrap;
+  color:#fff;
+}
+
+.btn1, .btn2, .btn3 {
+  display: inline-flex;
+  flex-direction: row;
+}
 }
 
 .summary {
@@ -80,20 +147,29 @@ a {
   font-size: 36px;
   text-decoration: underline;
 }
-
-.Comment{
-  color: white;
-  padding: 1rem;
+.intro {
+  text-align: left;
+  font-size: 60px;
+  color: #616060;
+  border-bottom: solid 10px;
+  background-image: url('./images/Screen\ Shot\ 2022-09-06\ at\ 4.58.13\ AM.png');
 }
 
-#message {
-  height: 200px
+.AboutMe {
+  margin-bottom: 5rem;
+  border-top: solid 5px #fff;
+  border-bottom: solid 5px #fff;
+}
+.navList, .projectsList, .profilesList {
+  display: none;
+  position: relative;
+  text-align: center ;
+ min-height: 100px;
+
 }
 
-#form-textarea-control-opinion {
-  height: 200px;
-}
+@media screen and (max-width: 400px) {
+  img { max-width: 200px;}
 
-#form-textarea-control-opinion {
-  width: 350px;
+  input, textarea{width:200px;}
 }

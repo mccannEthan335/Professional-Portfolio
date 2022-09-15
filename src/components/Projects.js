@@ -5,19 +5,20 @@ export default class Projects extends Component {
   render() {
 
     return (
-      <div className='Projects bg-gray' id='prj1'>
+      <div className='Projects' id='prj1'>
+
+      <div className='secTitle text-center bg-light text-dark'>My Projects</div>
         <div className='container bg-dark'>
-          <div className='secTitle text-center bg-light text-dark'>My Projects</div>
           <div className='title'>
-          <p>
-            Code Refactoring
-          </p>
+            <p>
+              Code Refactoring
+            </p>
           </div>
-          <div className='row content'>
-            <div className="prj-png1 col-sm-8">
+          <div className='content'>
+            <div className="prj-img">
               <img src={require('../images/prj1.png')} alt='Screenshot of WebPage'/>
             </div>
-            <div className='desc col-sm-4 bg-dark'>
+            <div className='desc bg-dark'>
               <p>
                 My very first project, with very little knowledge of HTML, CSS, or even web developement as a whole.
               I was tasked to refactor this webpage, so that it was more accesible to specific
@@ -34,12 +35,12 @@ export default class Projects extends Component {
             HTML/CSS/JS Quiz
           </p>
         </div>
-        <div className="row content">
-          <div className="col-sm-8">
+        <div className="content">
+          <div className="prj-img">
             <img src={require('../images/prj2.png')} alt='Screenshot of my Quiz' />
             </div> 
           
-          <div className='desc col-sm-4 bg-dark'>
+          <div className='desc bg-dark'>
             <p>
                I spent a good amount of time on this project specifically to break 
                down and truly understand the tools built in to the language.
@@ -58,12 +59,12 @@ export default class Projects extends Component {
             Work Day Scheduler
           </p>
           </div>
-          <div className='row content'>
-            <div className='col-sm-8'>
+          <div className='content'>
+            <div className='prj-img'>
             <img src={require('../images/prj3.png')} alt='Screenshot of the Scheduler in use' />
             
           </div>
-          <div className='desc col-sm-4 bg-dark'>
+          <div className='desc bg-dark'>
             <p>
                In this project, you will see that I learned to incorperate 
                third-party api's and now understand how useful they could be for 
@@ -75,19 +76,19 @@ export default class Projects extends Component {
           </div>
         </div>
         <br />
-       <div>
+       
         <div className='container bg-dark' id='prj4'>
         <div className='title'>
           <p>
             Note Taker
           </p>
           </div>
-          <div className='row content'>
-            <div className='col-sm-8'>
+          <div className='content'>
+            <div className='prj-img'>
             <img src={require('../images/prj4.png')} alt='Screen Shot of Note Taker Landing Page' />
             
           </div>
-          <div className='desc col-sm-4 bg-dark'>
+          <div className='desc bg-dark'>
             <p>
               In this note taker application I was given the task to
               allow a user to submit and save notes. To be able to go back to 
@@ -98,21 +99,24 @@ export default class Projects extends Component {
           </div>
           </div>
         </div>
-        <div className='groupProjects container bg-dark'>
-          <div className='secTitle text-center'>
+        <div className='secTitle text-center'>
             GROUP PROJECTS
           </div>
-        <div className='title' id='prj5'>
+        <div className='groupProjects'>
+          
+        <br />
+        <div className='container bg-dark'>
+          <div className='title' id='prj5'>
           <p>
             Date Night in Austin
           </p>
           </div>
-          <div className='row content'>
-            <div className='col-sm-8 bg-dark'>
+          <div className='content'>
+            <div className='prj-img'>
             <img src={require('../images/grp-prj1.png')} alt='Landing page' />
             
           </div>
-          <div className='desc col-sm-4 bg-dark'>
+          <div className='desc bg-dark'>
             <p>
                This project served a greater purpose than only learning the tools
                which this application is built upon. The purpose, or main goal is
@@ -123,18 +127,20 @@ export default class Projects extends Component {
             </p>
           </div>
           </div>
-        
+        </div>
+        <br />
+        <div className='container bg-dark'>
         <div className='title' id='prj6'>
           <p>
             Fitness Connect
           </p>
           </div>
-          <div className='row content'>
-            <div className='col-sm-8 bg-dark'>
+          <div className='content'>
+            <div className='prj-img'>
             <img src={require('../images/grp-prj2.png')} alt='Landing page' />
             
           </div>
-          <div className='desc col-sm-4 bg-dark'>
+          <div className='desc bg-dark'>
             <p>
                Building an application as a team except this time with the knowledge
                that we have all learend up to this point, made this a much smoother 
@@ -145,18 +151,19 @@ export default class Projects extends Component {
             </p>
           </div>
           </div>
-      
+      </div>
+      <div className='container bg-dark'>
         <div className='title' id='prj7'>
           <p>
             Lost Paws
           </p>
           </div>
-          <div className='row content'>
-            <div className='col-sm-8 bg-dark'>
+          <div className='content'>
+            <div className='prj-img'>
             <img src={require('../images/grpPrj3.png')} alt='Landing page' />
             
           </div>
-          <div className='desc col-sm-4 bg-dark'>
+          <div className='desc bg-dark'>
             <p>
                Incorperating the popular MERN stack and completing an application
                that contains 'full-stack' development. Was definitely a challenge
